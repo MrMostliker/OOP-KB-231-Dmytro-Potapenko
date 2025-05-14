@@ -5,17 +5,17 @@ public class task_1 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter k for line1: ");
-        float k = input.nextFloat();
+        float k1 = input.nextFloat();
         System.out.print("Enter b for line1: ");
-        float b = input.nextFloat();
-        Line line_1 = new Line(k, b);
+        float b1 = input.nextFloat();
 
         System.out.print("Enter k for line2: ");
-         k = input.nextFloat();
+        float k2 = input.nextFloat();
         System.out.print("Enter b for line2: ");
-         b = input.nextFloat();
-        Line line_2 = new Line(k, b);
-        
+        float b2 = input.nextFloat();
+
+        Line line_1 = new Line(k1, b1);
+        Line line_2 = new Line(k2, b2);
         Point point = line_1.intersection(line_2);
         if (point == null){
             System.out.println("Lines are parallel or coincident");
